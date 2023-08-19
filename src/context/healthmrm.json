@@ -1,0 +1,398 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "abhaID",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "patientName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "doctor",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "documentType",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hospitalName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "documentHash",
+          "type": "string"
+        }
+      ],
+      "name": "addMedicalRecord",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "abhaId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "role",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "passwordHash",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "addUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "abhaID",
+          "type": "string"
+        }
+      ],
+      "name": "getMedicalRecords",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "abhaID",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "patientName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "doctor",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hospitalName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "date",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentHash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct HealthRecordSystem.MedicalRecord[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "abhaId",
+          "type": "string"
+        }
+      ],
+      "name": "getUserData",
+      "outputs": [
+        {
+          "internalType": "string[2]",
+          "name": "",
+          "type": "string[2]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        }
+      ],
+      "name": "searchByDate",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "abhaID",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "patientName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "doctor",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hospitalName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "date",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentHash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct HealthRecordSystem.MedicalRecord[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "doctor",
+          "type": "string"
+        }
+      ],
+      "name": "searchByDoctor",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "abhaID",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "patientName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "doctor",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hospitalName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "date",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentHash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct HealthRecordSystem.MedicalRecord[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "documentType",
+          "type": "string"
+        }
+      ],
+      "name": "searchByDocumentType",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "abhaID",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "patientName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "doctor",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hospitalName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "date",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentHash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct HealthRecordSystem.MedicalRecord[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "hospitalName",
+          "type": "string"
+        }
+      ],
+      "name": "searchByHospitalName",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "abhaID",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "patientName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "doctor",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentType",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "hospitalName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "date",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "documentHash",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct HealthRecordSystem.MedicalRecord[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "abhaId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "password",
+          "type": "string"
+        }
+      ],
+      "name": "verifyPassword",
+      "outputs": [
+        {
+          "internalType": "string[2]",
+          "name": "",
+          "type": "string[2]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
