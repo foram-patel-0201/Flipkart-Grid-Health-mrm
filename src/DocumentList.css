@@ -1,0 +1,169 @@
+/* <div className="document-list">
+      <div className="document-list__search">
+        <input
+          type="text"
+          placeholder="Search"
+          value={search}
+          onChange={handleSearch}
+        />
+        <select value={filter} onChange={handleFilter}>
+          <option value="">Filter</option>
+          <option value="patientname">Patient Name</option>
+          <option value="abha">Abha</option>
+          <option value="doctor">Doctor</option>
+          <option value="documenttype">Document Type</option>
+          <option value="hospitalname">Hospital Name</option>
+        </select>
+      </div>
+      <div className="document-list__cards">
+        {filteredDocuments.map((document) => (
+          // <DocumentCard key={document.id} document={document} />
+          // write the documentcard here itself , have space for image and the rest of the data : patientname, abhaid, doctor, documenttype, hospitalname
+
+          <div className="document-card">
+            <div className="document-card__image">
+              <img src={document.image} alt="document" />
+            </div>
+            <div className="document-card__details">
+              <div className="document-card__details--patientname">
+                <h3>Patient Name</h3>
+                <p>{document.patientname}</p>
+              </div>
+              <div className="document-card__details--abha">
+                <h3>Abha</h3>
+                <p>{document.abha}</p>
+              </div>
+              <div className="document-card__details--doctor">
+                <h3>Doctor</h3>
+                <p>{document.doctor}</p>
+              </div>
+              <div className="document-card__details--documenttype">
+                <h3>Document Type</h3>
+                <p>{document.documenttype}</p>
+              </div>
+              <div className="document-card__details--hospitalname">
+                <h3>Hospital Name</h3>
+                <p>{document.hospitalname}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div> */
+
+/* write css for the above code */
+
+.document-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.document-list__search {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.document-list__search input {
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  margin-right: 30px;
+}
+
+.document-list__search select {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.document-list__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.document-card {
+  width: 30%;
+  height: 360px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.document-card__image {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.document-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.document-card__details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.document-card__details--patientname,
+.document-card__details--abha,
+.document-card__details--doctor,
+.document-card__details--documenttype,
+.document-card__details--hospitalname {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2 0px;
+}
+
+.document-card__details--patientname h3,
+.document-card__details--abha h3,
+.document-card__details--doctor h3,
+.document-card__details--documenttype h3,
+.document-card__details--hospitalname h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.document-card__details--patientname p,
+.document-card__details--abha p,
+.document-card__details--doctor p,
+.document-card__details--documenttype p,
+.document-card__details--hospitalname p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
